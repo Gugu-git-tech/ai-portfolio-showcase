@@ -35,17 +35,17 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col items-center justify-center px-6 relative">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(186_100%_50%/0.08)_0%,_transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(340_82%_49%/0.08)_0%,_transparent_70%)]" />
         <div className="text-center z-10 max-w-3xl">
           <p className="text-primary font-mono text-sm tracking-widest mb-4 uppercase">Hello, I'm</p>
           <h1 className="text-5xl md:text-7xl font-bold font-mono mb-4 text-foreground">
-            Alex Chen
+            Gugu Mandisa Xulu
           </h1>
           <p className="text-2xl md:text-3xl text-gradient font-semibold mb-6">
             AI & Machine Learning Developer
           </p>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto leading-relaxed">
-            Transforming complex data into intelligent solutions. Building the future with machine learning, one model at a time.
+            Building intelligent solutions that transform ideas into impactful, data-driven applications.
           </p>
           <div className="flex gap-4 justify-center mt-8">
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-colors">
@@ -68,10 +68,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I'm a passionate AI/ML developer and recent bootcamp graduate with a deep commitment to leveraging artificial intelligence for meaningful impact. My journey into machine learning began with a fascination for how algorithms can learn and adapt, leading me to pursue intensive training in modern AI technologies.
-              </p>
-              <p>
-                My goal is to contribute to innovative AI projects that solve real-world problems while continuing to expand my expertise in deep learning, natural language processing, and MLOps. I thrive in collaborative environments where I can both learn from experienced practitioners and share my fresh perspectives.
+                Hi, I'm Gugu Xulu, a Junior AI and Machine Learning Developer with hands-on experience in building intelligent solutions that solve real-world problems. I specialize in creating chatbots, content generators, and AI prototypes, while also bringing practical skills in technical support to ensure smooth deployment and user satisfaction. My expertise spans natural language processing, computer vision, and AI-driven automation. I'm passionate about turning ideas into impactful, data-driven applications and eager to contribute to a forward-thinking team where I can grow and make a difference.
               </p>
             </div>
             <div className="rounded-xl border border-border bg-card p-6">
@@ -79,7 +76,7 @@ const Index = () => {
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-center gap-2"><Brain className="w-4 h-4 text-primary" /> ML Engineering</li>
                 <li className="flex items-center gap-2"><Code className="w-4 h-4 text-primary" /> AI Development</li>
-                <li className="flex items-center gap-2"><Database className="w-4 h-4 text-primary" /> Data Science</li>
+                <li className="flex items-center gap-2"><Database className="w-4 h-4 text-primary" /> AI Prompt Engineering</li>
               </ul>
             </div>
           </div>
@@ -162,7 +159,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-border">
         <div className="container text-center text-sm text-muted-foreground">
-          <p>© 2024 Alex Chen. Built with passion for AI.</p>
+          <p>© 2024 Gugu Mandisa Xulu. Built with passion for AI.</p>
         </div>
       </footer>
     </div>
