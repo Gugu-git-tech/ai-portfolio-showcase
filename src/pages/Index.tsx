@@ -9,16 +9,19 @@ const Index = () => {
       title: "End-to-End AI Solution",
       description: "Capstone project demonstrating the complete AI lifecycle from data collection and preprocessing to model training, deployment, and monitoring in production.",
       tags: ["Python", "TensorFlow", "Docker", "AWS", "MLOps"],
+      demoUrl: "#",
     },
     {
       title: "Sector-Specific AI Prototype",
       description: "Industry-focused AI solution addressing real-world challenges with custom machine learning models optimized for domain-specific applications.",
       tags: ["PyTorch", "NLP", "Computer Vision", "FastAPI"],
+      demoUrl: "#",
     },
     {
       title: "AI Resume Builder",
       description: "AI-powered tool that generates ATS-friendly resumes using natural language processing to optimize content for job applications.",
       tags: ["OpenAI API", "React", "Node.js", "NLP"],
+      demoUrl: "#",
     },
   ];
 
