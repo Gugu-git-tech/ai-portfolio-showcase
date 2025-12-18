@@ -5,9 +5,10 @@ interface ProjectCardProps {
   description: string;
   tags: string[];
   featured?: boolean;
+  demoUrl?: string;
 }
 
-const ProjectCard = ({ title, description, tags, featured }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, tags, featured, demoUrl }: ProjectCardProps) => {
   return (
     <div className={`rounded-xl border border-border bg-card p-6 card-hover ${featured ? 'glow-box' : ''}`}>
       <h3 className="text-xl font-semibold font-mono text-foreground mb-3 flex items-center gap-2">
@@ -17,7 +18,7 @@ const ProjectCard = ({ title, description, tags, featured }: ProjectCardProps) =
       <p className="text-muted-foreground text-sm leading-relaxed mb-4">
         {description}
       </p>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 mb-4">
         {tags.map((tag) => (
           <span
             key={tag}
@@ -27,6 +28,15 @@ const ProjectCard = ({ title, description, tags, featured }: ProjectCardProps) =
           </span>
         ))}
       </div>
+      <a
+        href={demoUrl || "#"}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+      >
+        <ExternalLink className="w-4 h-4" />
+        Live Demo
+      </a>
     </div>
   );
 };
