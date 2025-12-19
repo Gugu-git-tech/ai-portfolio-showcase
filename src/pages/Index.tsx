@@ -9,19 +9,19 @@ const Index = () => {
       title: "End-to-End AI Solution",
       description: "Capstone project demonstrating the complete AI lifecycle from data collection and preprocessing to model training, deployment, and monitoring in production.",
       tags: ["Python", "TensorFlow", "Docker", "AWS", "MLOps"],
-      demoUrl: "#",
+      demoUrl: "https://echo-assist-28.lovable.app/",
     },
     {
       title: "Sector-Specific AI Prototype",
       description: "Industry-focused AI solution addressing real-world challenges with custom machine learning models optimized for domain-specific applications.",
       tags: ["PyTorch", "NLP", "Computer Vision", "FastAPI"],
-      demoUrl: "#",
+      demoUrl: "https://www.figma.com/make/r0pReRdMsAd0p9gSQ3wQXy/FreshScan?p=f&t=QZA9PER0l1QoaO5K-0&fullscreen=1",
     },
     {
       title: "AI Resume Builder",
       description: "AI-powered tool that generates ATS-friendly resumes using natural language processing to optimize content for job applications.",
       tags: ["OpenAI API", "React", "Node.js", "NLP"],
-      demoUrl: "#",
+      demoUrl: "https://ai-cv-star.lovable.app/",
     },
   ];
 
@@ -33,6 +33,7 @@ const Index = () => {
 
   const aiSkills = ["Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision", "Reinforcement Learning", "Neural Networks"];
   const tools = ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Docker", "AWS", "Git", "SQL"];
+  const softSkills = ["Communication Skill", "Active Listening", "Problem Solving", "Customer Support", "Team Collaboration", "AI Prompt Engineer"];
 
   return (
     <div className="min-h-screen bg-background">
@@ -101,6 +102,12 @@ const Index = () => {
               <h3 className="font-mono text-primary text-sm mb-4">Tools & Platforms</h3>
               <div className="flex flex-wrap gap-3">
                 {tools.map((tool) => <SkillBadge key={tool} name={tool} />)}
+              </div>
+            </div>
+            <div>
+              <h3 className="font-mono text-primary text-sm mb-4">Soft Skills</h3>
+              <div className="flex flex-wrap gap-3">
+                {softSkills.map((skill) => <SkillBadge key={skill} name={skill} />)}
               </div>
             </div>
           </div>
