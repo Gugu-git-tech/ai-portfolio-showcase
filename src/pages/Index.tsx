@@ -32,8 +32,8 @@ const Index = () => {
   ];
 
   const aiSkills = ["Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision", "Reinforcement Learning", "Neural Networks"];
-  const tools = ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Docker", "AWS", "Git", "SQL"];
-  const softSkills = ["Communication Skill", "Active Listening", "Problem Solving", "Customer Support", "Team Collaboration", "AI Prompt Engineer"];
+  const tools = ["Lovable AI", "Figma", "AI Prompt Engineer"];
+  const softSkills = ["Communication Skill", "Active Listening", "Problem Solving", "Customer Support", "Team Collaboration"];
 
   return (
     <div className="min-h-screen bg-background">
