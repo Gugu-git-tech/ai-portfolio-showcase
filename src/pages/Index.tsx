@@ -32,7 +32,7 @@ const Index = () => {
   ];
 
   const aiSkills = ["Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision", "Reinforcement Learning", "Neural Networks"];
-  const tools = ["Lovable AI", "Figma", "AI Prompt Engineer"];
+  const tools = ["Lovable AI", "Figma", "AI Prompt Engineer", "GitHub", "AWS"];
   const softSkills = ["Communication Skill", "Active Listening", "Problem Solving", "Customer Support", "Team Collaboration"];
 
   return (
