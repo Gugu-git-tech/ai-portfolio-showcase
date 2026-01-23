@@ -52,7 +52,7 @@ const Index = () => {
             Building intelligent solutions that transform ideas into impactful, data-driven applications.
           </p>
           <div className="flex gap-4 justify-center mt-8">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-colors">
+            <a href="https://github.com/Gugu-git-tech" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-colors">
               <Github className="w-5 h-5" />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-colors">
@@ -147,7 +147,7 @@ const Index = () => {
           <SectionHeading title="Get In Touch" subtitle="Interested in collaborating or have questions? Let's connect." />
           <div className="flex gap-6 justify-center">
             <a
-              href="https://github.com"
+              href="https://github.com/Gugu-git-tech"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 rounded-lg border border-border hover:border-primary hover:text-primary transition-colors font-medium"
