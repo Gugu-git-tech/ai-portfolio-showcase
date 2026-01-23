@@ -1,9 +1,19 @@
-import { Github, Linkedin, Mail, Brain, Code, Database, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail, Brain, Code, Database, ChevronDown, Menu, X } from "lucide-react";
+import { useState } from "react";
 import SectionHeading from "@/components/SectionHeading";
 import ProjectCard from "@/components/ProjectCard";
 import SkillBadge from "@/components/SkillBadge";
 
 const Index = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navLinks = [
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
+  ];
+
   const featuredProjects = [
     {
       title: "End-to-End AI Solution",
@@ -37,6 +47,54 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Navigation Bar */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+        <div className="container max-w-5xl mx-auto px-6">
+          <div className="flex items-center justify-between h-16">
+            <a href="#" className="font-mono text-primary font-semibold text-lg">GMX</a>
+            
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center gap-8">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden p-2 text-muted-foreground hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
+          </div>
+
+          {/* Mobile Navigation */}
+          {mobileMenuOpen && (
+            <div className="md:hidden pb-4 border-t border-border pt-4">
+              <div className="flex flex-col gap-4">
+                {navLinks.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {link.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col items-center justify-center px-6 relative">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(340_82%_49%/0.08)_0%,_transparent_70%)]" />
@@ -88,7 +146,7 @@ const Index = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="py-24 px-6 bg-card/50">
+      <section id="skills" className="py-24 px-6 bg-card/50">
         <div className="container max-w-4xl">
           <SectionHeading title="Skills & Technologies" />
           <div className="space-y-8">
@@ -115,7 +173,7 @@ const Index = () => {
       </section>
 
       {/* Featured Projects */}
-      <section className="py-24 px-6">
+      <section id="projects" className="py-24 px-6">
         <div className="container max-w-5xl">
           <SectionHeading title="Featured Projects" subtitle="Showcasing end-to-end AI solutions and practical applications" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -142,7 +200,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 px-6">
+      <section id="contact" className="py-24 px-6">
         <div className="container max-w-2xl text-center">
           <SectionHeading title="Get In Touch" subtitle="Interested in collaborating or have questions? Let's connect." />
           <div className="flex gap-6 justify-center">
